@@ -1,0 +1,53 @@
+{
+  "name": "br-wysiwyg",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craftjs/core": "^0.1.0-beta.10",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "classnames": "^2.2.6",
+    "lzutf8": "^0.5.5",
+    "material-ui-color-picker": "^3.5.0",
+    "re-resizable": "^6.5.4",
+    "react": "^16.9.0",
+    "react-color": "^2.18.1",
+    "react-contenteditable": "^3.3.5",
+    "react-dom": "^16.9.0",
+    "react-draggable": "^4.4.3",
+    "react-scripts": "3.4.1",
+    "react-youtube": "^7.11.3"
+  },
+  "scripts": {
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/App.tailwind.css -o src/App.css",
+    "watch:css": "postcss src/App.tailwind.css -o src/App.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.6.2"
+  }
+}
